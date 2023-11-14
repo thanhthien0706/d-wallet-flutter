@@ -1,4 +1,3 @@
-
 import 'package:cn1_d_wallet/common/constant/app-colors.dart';
 import 'package:cn1_d_wallet/common/constant/app-images.dart';
 import 'package:cn1_d_wallet/common/constant/app_icons.dart';
@@ -44,17 +43,17 @@ class _SignupEmailPageState extends State<SignupEmailPage> {
         return;
       }
 
-      bool? checkEmail = (await UserService(context: context)
-          .checkEmailExist(_emailController.text));
+      // bool? checkEmail = (await UserService(context: context)
+      //     .checkEmailExist(_emailController.text));
 
-      if (checkEmail == null) {
-        setState(() {
-          validEmail = false;
-          textErrorEmail = "Email already exists";
-        });
+      // if (checkEmail == null) {
+      //   setState(() {
+      //     validEmail = false;
+      //     textErrorEmail = "Email already exists";
+      //   });
 
-        return;
-      }
+      //   return;
+      // }
 
       // ignore: use_build_context_synchronously
       Provider.of<SignupProvider>(context, listen: false).email =

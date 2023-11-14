@@ -1,16 +1,12 @@
 import 'dart:convert';
 
 import 'package:cn1_d_wallet/common/constant/app_endpoint.dart';
-import 'package:cn1_d_wallet/common/dio/auth-interceptor.dart';
 import 'package:cn1_d_wallet/common/values/share-key.dart';
 import 'package:cn1_d_wallet/models/auth/auth.model.dart';
 import 'package:cn1_d_wallet/models/users/account.model.dart';
 import 'package:cn1_d_wallet/pages/auth/sign-in/signin-page.dart';
-import 'package:cn1_d_wallet/providers/signup-provider.dart';
 import 'package:cn1_d_wallet/services/bases/header-endpoint.dart';
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 

@@ -20,11 +20,13 @@ class _SignupUsernamePageState extends State<SignupUsernamePage> {
 
   _handleTap() {
     try {
-      Provider.of<SignupProvider>(context, listen: false).name =
-          _controller.text;
+      if (_controller.text != "") {
+        Provider.of<SignupProvider>(context, listen: false).name =
+            _controller.text;
 
-      Navigator.push(
-          context, MaterialPageRoute(builder: (_) => SignupPasswordPage()));
+        Navigator.push(
+            context, MaterialPageRoute(builder: (_) => SignupPasswordPage()));
+      }
     } catch (e) {
       print("Error: $e");
     }
